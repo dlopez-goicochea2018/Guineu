@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="../css/estil.css">
+    <title>buscar partida</title>
+  </head>
+  <body id="fondo">
+
+    <input type="checkbox" id="activador" class="activador"/>
+    <label for="activador">
+      <ul id="navegacio">
+        <li><img class="avatar-hambu" src="../img/avatar2.gif"></li>
+        <a href="21-perfil.html"><li class="lista-hambu">Editar perfil</li></a>
+        <li class="lista-hambu">So<label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></li>
+        <li class="lista-hambu">Modo avió<label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></li>
+        <li class="lista-hambu">Desbloqueig<label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></li>
+        <li class="lista-hambu">Legal</li>
+        <li class="lista-hambu">Ajuda</li>
+        <li class="idima"><img class="idima" src="../img/bandera-cat.png"><img class="idima" src="../img/bandera-esp.png"></li>
+
+      </ul>
+    </label>
+
+
+    <label class="switch"><input type="checkbox" checked><span class="slider round"></span></label>
+
+    <div class="tot">
+      <div class="contingut">
+
+        <div id="cabezera"></div>
+
+          <div class="primero2"></div>
+
+          <div><p class="jugadores">Oponents</p></div>
+
+          <div class="elegir">
+            <a href="6-buscarpartida.html"><button type="button" class="elegir-amigo"> AMICS </button></a>
+            <a href="7-buscarpartida.html"><button type="button" class="elegir-oponente"> ALEATORI </button></a>
+          </div>
+
+          <div><p class="jugadores">Selecciona els amics</p></div>
+
+          <div class="container">
+            <input class="listado" type="checkbox">Silvia Estall</br>
+            <input class="listado" type="checkbox">Jaume Ricart</br>
+            <input class="listado" type="checkbox">Zahara Ruiz</br>
+            <input class="listado" type="checkbox">Xavi Olle</br>
+            <input class="listado" type="checkbox">Alex Manchon</br>
+            <input class="listado" type="checkbox">Alejandro Moreno</br>
+            <input class="listado" type="checkbox">Cristian Alvarez</br>
+            <input class="listado" type="checkbox">Andrea Ganoza</br>
+            <input class="listado" type="checkbox">Ruben Garcia</br>
+          </div>
+
+
+
+          <div><p class="jugadores">Selecciona el nivell</p></div>
+
+          <div class="nivel">
+            <input type="button" id="cambiar-color5" class="nivell" value="1r" onclick="color5()"/>
+            <input type="button" id="cambiar-color6" class="nivell" value="2n" onclick="color6()"/>
+            <input type="button" id="cambiar-color7" class="nivell" value="PAU" onclick="color7()"/>
+          </div>
+
+
+          <div class="empezar-juego">
+            <a href="8-buscandopartida.html"><button type="button" class="play-juego"> <p class="play">COMENÇAR PARTIDA</p></button></a>
+          </div>
+
+          <div class="ultimo"></div>
+
+          <script type="text/javascript" language="javascript">
+            function color5(){
+              document.getElementById('cambiar-color5').style.backgroundColor="orange";
+            }
+
+            function color6(){
+              document.getElementById('cambiar-color6').style.backgroundColor="orange";
+            }
+
+            function color7(){
+              document.getElementById('cambiar-color7').style.backgroundColor="orange";
+            }
+          </script>
+
+
+
+
+          <div id="pie">
+            <div class="caja-home">
+              <a href="4-home1.html"><img class="icon-home" src="../img/home.png"></a>
+            </div>
+            <div class="caja-home">
+              <a href="6-buscarpartida.html"><img class="icon-play" src="../img/play2.png"></a>
+            </div>
+            <div class="caja-home">
+              <a href="16-solo.html"><img class="icon-estudia" src="../img/estudia.png"></a>
+            </div>
+            <div class="caja-home">
+              <a href="12-chat.html"><img class="icon-chat" src="../img/chat.png"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="../css/estil.css">
+    <title>buscar partida</title>
+  </head>
+  <body id="fondo">
+    <input type="checkbox" id="activador" class="activador"/>
+    <label for="activador">
+      <ul id="navegacio">
+        <li><img class="avatar-hambu" src="../img/avatar2.gif"></li>
+        <a href="21-perfil.html"><li class="lista-hambu">Editar perfil</li></a>
+        <li class="lista-hambu">So<label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></li>
+        <li class="lista-hambu">Modo avió<label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></li>
+        <li class="lista-hambu">Desbloqueig<label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></li>
+        <li class="lista-hambu">Legal</li>
+        <li class="lista-hambu">Ajuda</li>
+        <li class="idima"><img class="idima" src="../img/bandera-cat.png"><img class="idima" src="../img/bandera-esp.png"></li>
+
+      </ul>
+    </label>
+
+
+    <label class="switch"><input type="checkbox" checked><span class="slider round"></span></label>
+
+    <div class="tot">
+      <div class="contingut">
+
+        <div id="cabezera2"></div>
+
+          <div class="primero3"></div>
+
+          <div class="pregunta-tema">
+            <p class="categoria-pregunta">Història</p>
+            <div class="numero-pregunta"><p class="numero-pregunta2">20"</p></div>
+            <div class="pregunta">Quin va ser l'any d'inici i final de la guerra civil espanyola?</div>
+          </div>
+
+          <div class="respuesta" id="incorrecto1" onclick="colorrojo1()"/>
+            <p class="opcion">1940 - 1946</p>
+          </div>
+
+          <div class="respuesta" id="correcto" onclick="colorverde()"/>
+            <p class="opcion">1936 - 1939</p>
+          </div>
+
+          <div class="respuesta" id="incorrecto2" onclick="colorrojo2()"/>
+            <p class="opcion">1936 - 1938</p>
+          </div>
+
+          <div class="respuesta2" id="incorrecto3" onclick="colorrojo3()"/>
+            <p class="opcion">1932 - 1936</p>
+          </div>
+
+          <a href="10-ranking.html"><div class="terminar-juego"><p class="segir">SEGÜENT<p></div></a>
+
+          <script type="text/javascript" language="javascript">
+            function colorverde(){
+              document.getElementById('correcto').style.backgroundColor="#BFF6A8";
+            }
+
+            function colorrojo1(){
+              document.getElementById('incorrecto1').style.backgroundColor="#F39295";
+            }
+
+            function colorrojo2(){
+              document.getElementById('incorrecto2').style.backgroundColor="#F39295";
+            }
+
+            function colorrojo3(){
+              document.getElementById('incorrecto3').style.backgroundColor="#F39295";
+            }
+          </script>
+        </div>
+      </div>
+  </body>
+</html>

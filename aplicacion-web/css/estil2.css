@@ -1,0 +1,145 @@
+  body{
+    background:linear-gradient(#2cc7b6, #3cb0b6, #037b9c);
+    font-family: roboto;
+    margin: 0;
+    padding: 0;
+    height: 850px;
+    overflow: hidden;
+  }
+
+  #welcome{
+    text-align: center;
+  }
+
+  .logo{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+
+  .info{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .info2{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .entrar{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .entrar2{
+    margin: 0 auto;
+    margin-top: 70px;
+    text-align: center;
+  }
+
+  .datos{
+    width: 80%;
+    height: 30px;
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .datos2{
+    width: 80%;
+    height: 34px;
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 25px;
+  }
+
+  option:after {text-align: center;}
+
+  .accede{
+    background-color: #FFF;
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .recordar{
+    width: 250px;
+    font-size: 14px;
+    font-style: bold;
+    color: #222;
+    margin: 0 auto;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  #filete{
+    border-bottom: solid 2px #FFF;
+    margin: 40px 50px 30px 50px;
+  }
+
+  .registro{
+    background-color: #FFF;
+    width: 90px;
+    height: 40px;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .registro2{
+    background-color: #FFF;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px 10px 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  #facebook{
+    width: 25px;
+    height: auto;
+    margin-top: 4px;
+  }
+
+  #gmail{
+    width: 25px;
+    height: auto;
+    margin-top: 4px;
+  }
+
+
+
+@media screen and (min-width: 600px) {
+
+  body{
+    background-color: #FFF;
+  }
+
+  .datos, .datos2{
+    width: 500px;
+  }
+
+  #filete{
+    width: 350px;
+    margin: 0 auto;
+  }
+
+
+
+
+  }

@@ -1,0 +1,1276 @@
+@font-face {
+  font-family: "Roboto-Light";
+  src: url(../fonts/Roboto-Light.ttc);
+}
+
+body{
+background-color: #EEE;
+font-family: Roboto;
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*------ cabezera / pie --*/
+
+#cabezera{
+  background-color: #037b9c;
+  height: 40px;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 600;
+  box-shadow: 0px 0px 15px 2px #999;
+}
+
+#cabezera2{
+  background-color: #037b9c;
+  height: 40px;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 450;
+}
+
+.icon-menu{
+  height: 30px;
+  margin: 4px 0 0 10px;
+}
+
+.primero{
+  height: 80px;
+}
+
+.primero2{
+  height: 50px;
+}
+
+.primero3{
+  height: 40px;
+}
+
+.primero4{
+  height: 40px;
+  margin-bottom: 200px;
+}
+
+#pie{
+  background-color: #037b9c;
+  height: 40px;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  box-shadow: 0px 0px 15px 2px #999;
+}
+
+.caja-home, .caja-chat, .caja-play, .caja-estudia{
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+.icon-home, .icon-chat, .icon-play, .icon-estudia{
+  height: 38px;
+  width: auto;
+  margin-top: 2px;
+}
+
+.ultimo{
+  height: 50px;
+  clear: both;
+}
+
+
+
+
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  float: right;
+  margin-top: 10px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+
+/* hamburguesa -------------------- */
+
+#navegacio {
+  padding-top: 40px;
+  width:200px;
+  height: 700px;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left:-270px;
+  background-color: #037b9c;
+  list-style: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.activador {
+  position: absolute;
+  background-color: yellow;
+}
+
+label[for="activador"] {
+	position: fixed;
+	left: 15px;
+	z-index: 600;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	background-size: 100%;
+	background-image: url(../img/menu.png);
+	background-repeat: no-repeat;
+}
+
+label[for="activador"]::after {
+	color: #FFF;
+	display: block;
+	width: 30px;
+	height: 30px;
+	font-size: 50px;
+	line-height: 7px;
+	text-align: center;
+}
+
+.activador:checked + label { left: 270px;}
+.activador:checked ~ .navegacio {left: 200px;}
+
+.activador + label {
+  transition: left 0.3s;
+}
+
+  .tot {
+    position: relative;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  .contingut {
+  	width: 100%;
+  	height: 100%;
+  	top: 0;
+  	right: 0;
+  	left: 0;
+  	bottom: 0;
+  	z-index: -1;
+  }
+
+
+  .avatar-hambu{
+    width: 120px;
+    height: 120px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    border: solid 4px white;
+    border-radius: 60px;
+  }
+
+  .lista-hambu{
+    height: 40px;
+    width: 90%;
+    border-bottom: 1px white solid;
+    color: #FFF;
+    line-height: 40px;
+    margin-left: -20px;
+
+  }
+
+
+
+  .idima{
+    width: 50px;
+    height: auto;
+    display: inline;
+    margin-top: 60px;
+    margin-right: 30px;
+  }
+
+/*------ cabezera / pie --*/
+
+
+/*------ home --*/
+
+#barra-muro{
+  background-color: #DDD;
+  height: 35px;
+  width: 100%;
+  margin-top: 40px;
+  position: fixed;
+  border-bottom: solid 3px #037b9c;
+  z-index: 222;
+}
+
+.muro{
+  color: black;
+  height: 30px;
+  width: 50%;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  font-family: roboto;
+  margin-top: 6px;
+}
+
+.muro2{
+  color: #037b9c;
+  height: 30px;
+  width: 50%;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  font-family: Roboto;
+  margin-top: 6px;
+}
+
+.ranking-global23{
+  width: 100%;
+  height: 60px;
+  text-align: center;
+}
+
+#boton-ranking23{
+  width: 60%;
+  height: 30px;
+  margin-top: 30px;
+  font-size: 22px;
+  border-radius: 5px;
+  background-color: #037b9c;
+  color: #FFF;
+}
+
+.publicacion{
+  background-color: #FFF;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 90%;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px #999;
+}
+
+.nombre-amigo-foro{
+  font-size: 18px;
+  padding: 10px 0 0 10px;
+  font-style: bold;
+  border-bottom: solid 1px #037b9c;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.comunicacion{
+  clear: both;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.fecha{
+  float: right;
+  font-size: 12px;
+  color: #AAA;
+  margin-right: 15px;
+}
+
+.listado-ranking{
+  width: 80%;
+  height: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-bottom: solid 1px #037b9c;
+  font-size: 16px;
+}
+.listado-ranking2{
+  width: 80%;
+  height: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-bottom: solid 1px #037b9c;
+  font-size: 18px;
+  font-style: bold;
+  color: #037b9c;
+}
+
+/*------ home --*/
+
+
+
+
+
+
+
+
+
+
+
+/*------ juego --*/
+
+/*---------------- buscar partida --------*/
+
+.jugadores{
+  font-size: 18px;
+  text-align: center;
+  font-family: roboto;
+  margin-top: 30px;
+}
+
+
+.elegir{
+  width: 100%;
+  height: 20px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.elegir-amigo{
+  background-color: orange;
+  width: 40%;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 19px;
+}
+
+.elegir-amigo2{
+  background-color: #037b9c;
+  width: 40%;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 19px;
+}
+
+.elegir-oponente{
+  background-color: #037b9c;
+  width: 40%;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 19px;
+}
+
+.elegir-oponente2{
+  background-color: orange;
+  width: 40%;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 19px;
+}
+
+.container{
+  display: block;
+  background-color: #FFF;
+  width: 80%;
+  height: 150px;
+  margin: 0 auto;
+  text-align: left;
+  overflow: scroll;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.listado{
+  margin: 5px 10px
+}
+
+.num-jugadores{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+  float: left;
+}
+
+.numero-jugadores{
+  width: 40%;
+  height: 70px;
+  background-color: #FFF;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.nivel{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  float: left;
+  margin-bottom: 30px;
+}
+
+.nivell{
+  width: 30%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #037b9c;
+  color: #FFF;
+  font-size: 18px;
+}
+
+.empezar-juego{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.play-juego{
+  width: 80%;
+  height: 40px;
+  background-color: #037b9c;
+  border-radius: 10px;
+}
+
+.play{
+  font-size: 20px;
+  margin: 2px;
+  color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+.reloj-arena{
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  animation: reloj-arena 3s 0s infinite;
+}
+
+.reloj-arena2{
+  height: 100px;
+  width: 100px;
+}
+
+@keyframes reloj-arena {
+  form {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+.encontrados{
+  width: 70%;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.circulo{
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: #037b9c;
+}
+
+.nombre{
+  width: 70%;
+  height: 30px;
+  font-size: 20px;
+  margin: -30px 0 0 70px;
+  position: relative;
+}
+
+/*---------------- buscar partida --------*/
+
+
+/*---------------- partida --------*/
+
+.mi-jugador{
+  width: 90%;
+  height: 40px;;
+  margin: 0 auto;
+  border-bottom: solid 3px #037b9c;
+}
+
+.avatar{
+  height: 40px;
+  width: 40px;
+  border-radius: 18px;
+  background-color:  #037b9c;
+}
+
+.identidad{
+  font-size: 20px;
+  position: relative;
+  margin: -30px 0 0 60px;
+}
+
+#juego{
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.tablero{
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 3px #888;
+}
+
+#dado{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  margin: -182px 0 0 120px;
+}
+
+.ficha1{
+  width: 14px;
+  height: 14px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background-color: pink;
+  position: absolute;
+  margin: -70px 0 0 43px;
+}
+
+.ficha2{
+  width: 14px;
+  height: 14px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background-color: yellowgreen;
+  position: absolute;
+  margin: -271px 0 0 68px;
+}
+
+.ficha3{
+  width: 14px;
+  height: 14px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background-color: skyblue;
+  position: absolute;
+  margin: -121px 0 0 213px;
+}
+
+.ficha4{
+  width: 14px;
+  height: 14px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background-color: orange;
+  position: absolute;
+  margin: -280px 0 0 202px;
+}
+
+.preguntas12{
+  width: 90%;
+  height: 30px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pregunta-historia{
+  width: 45%;
+  height: 25px;
+  background-color: #ED713B;
+  font-size: 18px;
+  color: #FFF;
+  border-radius: 6px;
+}
+
+.partida-jugadores{
+  width: 90%;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-bottom: solid 1px #037b9c;
+}
+
+.partida-jugadores2{
+  width: 90%;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-bottom: solid 1px #037b9c;
+}
+
+.partida-jugadores3{
+  width: 90%;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-bottom: solid 1px #037b9c;
+}
+
+.avatar2{
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  background-color:  #037b9c;
+}
+
+.identidad2{
+  font-size: 20px;
+  position: relative;
+  margin: -26px 0 0 60px;
+}
+
+.quesito{
+  width: 100px;
+  height: auto;
+  float: right;
+  margin-top: -25px;
+}
+
+/*---------------- partida --------*/
+
+/*---------------- final partida --------*/
+
+.primer-puesto{
+  width: 90%;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.laurel{
+  position: relative;
+  margin: -79px 0 0 5px;
+}
+
+.avatar-ganador{
+  width: 60px;
+  height: 60px;
+  background-color: blue;
+  border-radius: 30px;
+  position: relative;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.nombre-ganador{
+  font-size: 25px;
+  margin: -60px 0 0 130px;
+}
+
+.puesto{
+  width: 90%;
+  height: 70px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.avatar-ranking{
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  border-radius: 20px;
+  position: relative;
+  margin: 15px 0 0 50px;
+}
+
+.nombre-ranking{
+  font-size: 18px;
+  margin: -30px 0 0 120px;
+}
+
+.estadistica-global{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.grafic{
+  width: 80px;
+  height: auto;
+}
+
+.porcentaje{
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.estadistica{
+  width: 33%;
+  height: 150px;
+  float: left;
+  margin-top: 20px;
+}
+
+/*---------------- final partida --------*/
+/*------ juego --*/
+
+
+/* ----- solo---*/
+
+.nivel{
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+	text-align: center;
+}
+
+.solo{
+  width: 80%;
+  height: 50px;
+	text-align: center;
+  border-radius: 5px;
+  background-color: #037b9c;
+  color: #FFF;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.solo2{
+  width: 60%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #037b9c;
+  color: #FFF;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.nivel-porcentaje{
+  width: 15%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #037b9c;
+  color: #FFF;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.casilla{
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #037b9c;
+  color: #FFF;
+  font-size: 20px;
+  margin-bottom: 10px;
+  float: left;
+  margin-left: 10px;
+}
+
+.estrella{
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.nombre-asignatura{
+	width: 90%;
+	height: 20px;
+	border-bottom: solid 1px #037b9c;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+
+
+.pregunta-tema{
+  background:linear-gradient(#222, #ED713B);
+  height: 190px;
+}
+
+.categoria-pregunta{
+  color: #FFF;
+  height: 20px;
+  font-size: 16px;
+  float: left;
+  margin-left: 10px;
+}
+
+.numero-pregunta{
+  background-color: #FFF;
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.numero-pregunta2{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 15px;
+
+}
+
+.pregunta{
+  clear: both;
+  width: 85%;
+  height: 60px;
+  color: #FFF;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.respuesta{
+  height: 80px;
+  width: 90%;
+  margin: 0 auto;
+  line-height:80px;
+  border-bottom: solid 1px #777;
+}
+
+.respuesta2{
+  height: 80px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  line-height:80px;
+}
+
+.opcion{
+  margin: 0 auto;
+  margin-top: 0px;
+  text-align: center;
+
+}
+
+.terminar-juego{
+  margin: 0 auto;
+  text-align: center;
+  height: 30px;
+  width: 90%;
+  border-radius: 10px;
+  margin-top: 30px;
+  background: #037b9c;
+  line-height: 30px;
+}
+
+.segir{
+  margin: 10px;
+  font-size: 18px;
+  color: #FFF;
+}
+
+.contar{
+  margin-top: 300px;
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.preguntas-acertadas{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.estadistica-solo{
+  margin-top: 90px;
+  font-size: 18px;
+}
+
+.estadistica-solo2{
+  font-size: 50px;
+  margin: 5px;
+}
+
+.estadistica-solo3{
+  font-size: 18px;
+  margin: 5px;
+  margin-bottom: 30px;
+}
+
+.volver{
+  width: 70%;
+  height: 30px;
+  text-align: center;
+  margin: 0 auto;
+  color: #FFF;
+  font-size: 18px;
+  margin-top: 120px;
+}
+/* ----- solo---*/
+
+/*------- chat ---*/
+
+#barra{
+  background-color: #EEE;
+  height: 35px;
+  width: 100%;
+  margin-top: 40px;
+  position: fixed;
+  border-bottom: solid 3px #037b9c;
+  z-index: 9999;
+}
+
+.menu{
+  color: black;
+  width: 33.3%;
+  height: 30px;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  font-family: roboto;
+  margin-top: 6px;
+}
+
+.menu2{
+  color: #037b9c;
+  width: 33.3%;
+  height: 30px;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  font-family: roboto;
+  margin-top: 6px;
+}
+
+.chat{
+  width: 90%;
+  height: 40px;
+  margin: 25px auto;
+  border-bottom: solid 1px #037b9c;
+}
+
+.foto-amigo{
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  background-color: #037b9c;
+}
+
+.nombre-amigo{
+  font-size: 18px;
+  margin: -25px 0 0 50px;
+  position: relative;
+  color: #333;
+}
+
+.letra{
+  background-color: #037b9c;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  font-size: 20px;
+  text-align: center;
+  color: #FFF;
+  margin: 50px ;
+  line-height: 30px;
+}
+
+.bscar{
+  width: 80%;
+  height: 25px;
+  border-radius: 10px;
+  font-size: 18px;
+  box-shadow: 0px 0px 10px 2px #999;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.buscar{
+  text-align: center;
+}
+
+.buscar22{
+width: 80%;
+height: 30px;
+border-radius: 10px;
+font-size: 15px;
+text-align: center;
+margin: 0 auto;
+margin-top: 20px;
+}
+
+.dialogo{
+  background-color: #FFF;
+  width: 70%;
+  height: auto;
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px 2px #999;
+  border-radius: 5px;
+}
+
+.dialogo2{
+  background-color: #FFF;
+  width: 70%;
+  height: auto;
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px 2px #999;
+  border-radius: 5px;
+}
+
+.texto{
+  margin: 7px;
+}
+
+
+/*------- chat ---*/
+
+/* ------- perfil---*/
+#miperfil{
+  width: 90%;
+  height: 200px;
+  background-color: orane;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: solid 3px #037b9c;
+  margin-bottom: 40px;
+}
+
+.avatarperfil{
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+
+}
+
+.datos-prefil{
+  width: 80%;
+  height: 25px;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: solid 1px #037b9c;
+  margin-top: 30px;
+}
+
+.datos-escritos{
+  width: 70%;
+  height: 25px;
+  font-size: 18px;
+  float: left;
+  margin-top: 5px;
+}
+
+.pencil{
+  float: right;
+  width: 25px;
+  height: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 600px){
+
+  #boton-ranking23{
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+  }
+
+  .publicacion{
+    width: 600px;
+    height: auto;
+  }
+
+
+
+
+
+/*---juego---*/
+
+  #juego{float: left;}
+
+  .tablero{
+    width: 400px;
+    height: auto;
+    margin-left: 20px;
+  }
+
+  #dado{
+    margin: -245px 0 0 175px;
+    width: 90px;
+    height: auto;
+  }
+
+  .ficha1{margin: -90px 0 0 80px;}/*rosa*/
+  .ficha2{margin: -360px 0 0 113px;}/*verde*/
+  .ficha3{margin: -158px 0 0 307px;}/*azul*/
+  .ficha4{margin: -370px 0 0 292px;}/*naranja*/
+
+  .mi-jugador{
+    width: 40%;
+    height: 50px;
+    right: 30px;
+    top: 60px;
+    position: absolute;
+  }
+
+  .pregunta-historia{
+    position: relative;
+    right: -90px;
+    width: 150px;
+    height: 40px;
+    top: 100px;
+  }
+
+  .partida-jugadores{
+    width: 40%;
+    top: 300px;
+    right: 30px;
+    position: fixed;
+  }
+
+  .partida-jugadores2{
+    width: 40%;
+    top: 350px;
+    right: 30px;
+    position: fixed;
+  }
+
+  .partida-jugadores3{
+    width: 40%;
+    top: 400px;
+    right: 30px;
+    position: fixed;
+  }
+
+
+  .respuesta, .respuesta2{
+    width: 49.8%;
+    height: 70px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: solid 1px #777;
+    border-left: solid 1px #777;
+    float: left;
+  }
+
+  .terminar-juego{
+    width: 300px;
+    position: relative;
+    margin-top: 170px;
+  }
+
+
+
+  /* ----------- juego----*/
+
+  /* ----------- solo----*/
+
+  .solo, .solo2{
+    width: 450px;
+    text-align: center;
+  }
+
+  .nivel-porcentaje{
+    width: 60px;
+  }
+
+  .nivel2{
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  /* ----------- solo----*/
+
+  /* ----------- chat----*/
+
+  .chat{
+    width: 400px;
+  }
+
+  .letra{
+    margin-left: 30%;
+  }
+
+
+  /* ----------- chat----*/
+
+  .miperfil{
+    width: 700px;
+  }
+
+  .datos-prefil{
+    width: 600px;
+  }
+
+
+
+
+
+}
