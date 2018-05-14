@@ -130,6 +130,11 @@
     background-color: #FFF;
   }
 
+  .logo{
+    height: 400px;
+    width: auto;
+  }
+  
   .datos, .datos2{
     width: 500px;
   }
