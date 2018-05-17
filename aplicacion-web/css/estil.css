@@ -3,6 +3,9 @@
   src: url(../fonts/Roboto-Light.ttc);
 }
 
+@media screen and (max-width: 480px) and (orientation: portrait){
+   
+
 body{
 background-color: #EEE;
 font-family: Roboto;
@@ -1120,7 +1123,7 @@ margin-top: 20px;
 
 }
 
-
+}
 
 
 
