@@ -12,7 +12,7 @@
   }
 
   .logo{
-    width: 90%;
+    width: 350px;
     height: auto;
     margin: 0 auto;
     margin-top: 30px;
@@ -43,7 +43,7 @@
   }
 
   .datos{
-    width: 80%;
+    width: 500px;
     height: 30px;
     margin-top: 20px;
     font-size: 15px;
@@ -53,12 +53,12 @@
   }
 
   .datos2{
-    width: 80%;
+    width: 500px;
     height: 34px;
     margin-top: 20px;
     font-size: 15px;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 5px;
   }
 
   option:after {text-align: center;}
@@ -89,7 +89,9 @@
 
   #filete{
     border-bottom: solid 2px #FFF;
-    margin: 40px 50px 30px 50px;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .registro{
@@ -122,27 +124,26 @@
     margin-top: 4px;
   }
 
+@media screen and (max-width: 480px) and (orientation: portrait){
 
-
-@media screen and (min-width: 600px) {
-
-  body{
-    background-color: #FFF;
-  }
-
-  .logo{
-    height: 400px;
-    width: auto;
-  }
-  
   .datos, .datos2{
-    width: 500px;
+    width: 80%;
   }
 
   #filete{
-    width: 350px;
-    margin: 0 auto;
+    width: 70%;
   }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 480px;) and (orientation: landscape) {
+
+
 
 
 
