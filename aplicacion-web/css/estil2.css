@@ -129,8 +129,9 @@
 
 @media screen and (max-width: 480px){
 
-  body{
-    background-color: red;
+  .logo{
+    width: 70%;
+    height: auto;
   }
 
   .datos, .datos2{
