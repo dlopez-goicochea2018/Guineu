@@ -1,10 +1,12 @@
+
+
   body{
-    background:linear-gradient(#2cc7b6, #3cb0b6, #037b9c);
+    ackground:linear-gradient(#2cc7b6, #3cb0b6, #037b9c);
+    background-color: orange;
     font-family: roboto;
     margin: 0;
     padding: 0;
-    height: 850px;
-    overflow: hidden;
+    overflow-y: auto;
   }
 
   #welcome{
@@ -124,7 +126,12 @@
     margin-top: 4px;
   }
 
+
 @media screen and (max-width: 480px) and (orientation: portrait){
+
+  body{
+    background-color: red;
+  }
 
   .datos, .datos2{
     width: 80%;
@@ -134,18 +141,3 @@
     width: 70%;
   }
 }
-
-
-
-
-
-
-
-@media screen and (max-width: 480px;) and (orientation: landscape) {
-
-
-
-
-
-
-  }
