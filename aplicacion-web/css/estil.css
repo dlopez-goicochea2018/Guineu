@@ -3,11 +3,8 @@
   src: url(../fonts/Roboto-Light.ttc);
 }
 
-
-   
-
 body{
-background-color: #EEE;
+background-color: #DDD;
 font-family: Roboto;
 margin: 0;
 padding: 0;
@@ -382,7 +379,7 @@ label[for="activador"]::after {
 
 
 .elegir{
-  width: 100%;
+  width: 450px;
   height: 20px;
   margin: 20px auto;
   text-align: center;
@@ -423,7 +420,7 @@ label[for="activador"]::after {
 .container{
   display: block;
   background-color: #FFF;
-  width: 80%;
+  width: 400px;
   height: 150px;
   margin: 0 auto;
   text-align: left;
@@ -446,8 +443,8 @@ label[for="activador"]::after {
 }
 
 .numero-jugadores{
-  width: 40%;
-  height: 70px;
+  width: 150px;
+  height: 65px;
   background-color: #FFF;
   border-radius: 10px;
   text-align: center;
@@ -459,17 +456,16 @@ label[for="activador"]::after {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  float: left;
-  margin-bottom: 30px;
 }
 
 .nivell{
-  width: 30%;
+  width: 110px;
   height: 30px;
   border-radius: 5px;
   background-color: #037b9c;
   color: #FFF;
   font-size: 18px;
+  margin: 0 2px -10px 2px;
 }
 
 .empezar-juego{
@@ -478,7 +474,7 @@ label[for="activador"]::after {
 }
 
 .play-juego{
-  width: 80%;
+  width: 300px;
   height: 40px;
   background-color: #037b9c;
   border-radius: 10px;
@@ -518,7 +514,7 @@ label[for="activador"]::after {
 }
 
 .encontrados{
-  width: 70%;
+  width: 200px;
   height: 50px;
   margin: 0 auto;
   margin-top: 30px;
@@ -543,12 +539,17 @@ label[for="activador"]::after {
 
 
 /*---------------- partida --------*/
+#todo-juego{
+  width: 750px;
+  height: auto;
+  margin: 0 auto;
+}
 
 .mi-jugador{
-  width: 90%;
-  height: 40px;;
-  margin: 0 auto;
+  width: 350px;
+  height: 40px;
   border-bottom: solid 3px #037b9c;
+  float: right;
 }
 
 .avatar{
@@ -564,10 +565,15 @@ label[for="activador"]::after {
   margin: -30px 0 0 60px;
 }
 
+#tablero-jugador{
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
 #juego{
   width: 300px;
   height: 300px;
-  margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -626,43 +632,14 @@ label[for="activador"]::after {
   margin: -280px 0 0 202px;
 }
 
-.preguntas12{
-  width: 90%;
-  height: 30px;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.pregunta-historia{
-  width: 45%;
-  height: 25px;
-  background-color: #ED713B;
-  font-size: 18px;
-  color: #FFF;
-  border-radius: 6px;
+.rivales{
+  float: right;
+  margin-top: -260px;
 }
 
 .partida-jugadores{
-  width: 90%;
+  width: 300px;
   height: 30px;
-  margin: 0 auto;
-  margin-top: 10px;
-  border-bottom: solid 1px #037b9c;
-}
-
-.partida-jugadores2{
-  width: 90%;
-  height: 30px;
-  margin: 0 auto;
-  margin-top: 10px;
-  border-bottom: solid 1px #037b9c;
-}
-
-.partida-jugadores3{
-  width: 90%;
-  height: 30px;
-  margin: 0 auto;
   margin-top: 10px;
   border-bottom: solid 1px #037b9c;
 }
@@ -687,12 +664,29 @@ label[for="activador"]::after {
   margin-top: -25px;
 }
 
+.preguntas12{
+  width: 350px;
+  height: 30px;
+  text-align: center;
+  margin-top: -60px;
+  float: right;
+}
+
+.pregunta-historia{
+  width: 45%;
+  height: 25px;
+  background-color: #ED713B;
+  font-size: 18px;
+  color: #FFF;
+  border-radius: 6px;
+}
+
 /*---------------- partida --------*/
 
 /*---------------- final partida --------*/
 
 .primer-puesto{
-  width: 90%;
+  width: 400px;
   height: 100px;
   margin: 0 auto;
   margin-top: 40px;
@@ -720,7 +714,7 @@ label[for="activador"]::after {
 }
 
 .puesto{
-  width: 90%;
+  width: 380px;
   height: 70px;
   margin: 0 auto;
   margin-top: 20px;
@@ -741,14 +735,14 @@ label[for="activador"]::after {
 }
 
 .estadistica-global{
-  width: 100%;
+  width: 500px;
   margin: 0 auto;
   text-align: center;
 
 }
 
 .grafic{
-  width: 80px;
+  width: 100px;
   height: auto;
 }
 
@@ -770,6 +764,14 @@ label[for="activador"]::after {
 
 
 /* ----- solo---*/
+.nombre-asignatura{
+	width: 550px;
+	height: 20px;
+	border-bottom: solid 1px #037b9c;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 10px;
+}
 
 .nivel{
   width: 100%;
@@ -780,7 +782,7 @@ label[for="activador"]::after {
 }
 
 .solo{
-  width: 80%;
+  width: 400px;
   height: 50px;
 	text-align: center;
   border-radius: 5px;
@@ -790,8 +792,29 @@ label[for="activador"]::after {
   margin-bottom: 30px;
 }
 
+.nivel2{
+  width: 520px;
+  margin: 0 auto;
+  margin-top: 30px;
+	text-align: center;
+}
+
+.casilla{
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #037b9c;
+  position: absolute;
+}
+
+.estrella{
+  width: 30px;
+  height: 30px;
+  margin-top: 4px;
+}
+
 .solo2{
-  width: 60%;
+  width: 350px;
   height: 40px;
   border-radius: 5px;
   background-color: #037b9c;
@@ -801,7 +824,7 @@ label[for="activador"]::after {
 }
 
 .nivel-porcentaje{
-  width: 15%;
+  width: 60px;
   height: 40px;
   border-radius: 5px;
   background-color: #037b9c;
@@ -809,36 +832,6 @@ label[for="activador"]::after {
   font-size: 20px;
   margin-bottom: 10px;
 }
-
-.casilla{
-  width: 40px;
-  height: 40px;
-  border-radius: 5px;
-  background-color: #037b9c;
-  color: #FFF;
-  font-size: 20px;
-  margin-bottom: 10px;
-  float: left;
-  margin-left: 10px;
-}
-
-.estrella{
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  margin-top: 4px;
-}
-
-.nombre-asignatura{
-	width: 90%;
-	height: 20px;
-	border-bottom: solid 1px #037b9c;
-	margin: 0 auto;
-	text-align: center;
-	margin-bottom: 10px;
-}
-
-
 
 .pregunta-tema{
   background:linear-gradient(#222, #ED713B);
@@ -882,11 +875,14 @@ label[for="activador"]::after {
 }
 
 .respuesta{
-  height: 80px;
-  width: 90%;
+  width: 49.8%;
+  height: 70px;
   margin: 0 auto;
-  line-height:80px;
+  text-align: center;
   border-bottom: solid 1px #777;
+  border-left: solid 1px #777;
+  float: left;
+  line-height: 70px;
 }
 
 .respuesta2{
@@ -908,11 +904,12 @@ label[for="activador"]::after {
   margin: 0 auto;
   text-align: center;
   height: 30px;
-  width: 90%;
+  width: 200px;
   border-radius: 10px;
-  margin-top: 30px;
+  margin-top: 160px;
   background: #037b9c;
   line-height: 30px;
+  position: relative;
 }
 
 .segir{
@@ -923,7 +920,7 @@ label[for="activador"]::after {
 
 .contar{
   margin-top: 300px;
-  width: 200px;
+  width: 150px;
   height: auto;
   margin: 0 auto;
 }
@@ -1120,7 +1117,6 @@ margin-top: 20px;
   float: right;
   width: 25px;
   height: auto;
-
 }
 
 
@@ -1135,144 +1131,95 @@ margin-top: 20px;
 
 
 
-
-@media screen and (min-width: 481px){
-
-  #boton-ranking23{
-    width: 300px;
-    height: 50px;
-    margin: 10px;
-  }
-
-  .publicacion{
-    width: 600px;
-    height: auto;
-  }
+@media screen and (max-width: 480px){
 
 
+/*---------muro ------------------*/
+
+.publicacion{
+  width: 90%;
+  height: auto;
+}
 
 
+/*---------juego ------------------*/
 
-/*---juego---*/
+.elegir{
+  width: 100%;
+}
 
-  #juego{float: left;}
+.elegir-amigo, .elegir-amigo2, .elegir-oponente, .elegir-oponente2{
+  width: 37%;
+}
 
-  .tablero{
-    width: 400px;
-    height: auto;
-    margin-left: 20px;
-  }
+.container{
+  width: 70%;
+}
 
-  #dado{
-    margin: -245px 0 0 175px;
-    width: 90px;
-    height: auto;
-  }
+.nivell{
+  width: 80px;
+}
 
-  .ficha1{margin: -90px 0 0 80px;}/*rosa*/
-  .ficha2{margin: -360px 0 0 113px;}/*verde*/
-  .ficha3{margin: -158px 0 0 307px;}/*azul*/
-  .ficha4{margin: -370px 0 0 292px;}/*naranja*/
-
-  .mi-jugador{
-    width: 40%;
-    height: 50px;
-    right: 30px;
-    top: 60px;
-    position: absolute;
-  }
-
-  .pregunta-historia{
-    position: relative;
-    right: -90px;
-    width: 150px;
-    height: 40px;
-    top: 100px;
-  }
-
-  .partida-jugadores{
-    width: 40%;
-    top: 300px;
-    right: 30px;
-    position: fixed;
-  }
-
-  .partida-jugadores2{
-    width: 40%;
-    top: 350px;
-    right: 30px;
-    position: fixed;
-  }
-
-  .partida-jugadores3{
-    width: 40%;
-    top: 400px;
-    right: 30px;
-    position: fixed;
-  }
-
-
-  .respuesta, .respuesta2{
-    width: 49.8%;
-    height: 70px;
-    margin: 0 auto;
-    text-align: center;
-    border-bottom: solid 1px #777;
-    border-left: solid 1px #777;
-    float: left;
-  }
-
-  .terminar-juego{
-    width: 300px;
-    position: relative;
-    margin-top: 170px;
-  }
+.play-juego{
+  width: 70%;
+}
 
 
 
-  /* ----------- juego----*/
-
-  /* ----------- solo----*/
-
-  .solo, .solo2{
-    width: 450px;
-    text-align: center;
-  }
-
-  .nivel-porcentaje{
-    width: 60px;
-  }
-
-  .nivel2{
-    width: 600px;
-    margin: 0 auto;
-  }
-
-  /* ----------- solo----*/
-
-  /* ----------- chat----*/
-
-  .chat{
-    width: 400px;
-  }
-
-  .letra{
-    margin-left: 30%;
-  }
 
 
-  /* ----------- chat----*/
+#todo-juego{
+  width: 100%;
+}
 
-  .miperfil{
-    width: 700px;
-  }
+.mi-jugador{
+  width: 100%;
+  margin-bottom: 20px;
+}
 
-  .datos-prefil{
-    width: 600px;
-  }
+#juego{
+  width: 100%;
 
+}
 
+.tablero{
+  height: 250px;
+  width: 250px;
+  margin: 0 auto;
+  text-align: center;
+}
 
+#dado{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin: -160px 0 0 120px;
+}
+
+.ficha1, .ficha2, .ficha3, .ficha4 {
+  width: 10px;
+  height: 10px;
+}
+
+.ficha1{margin: -60px 0 0 37px;}
+.ficha2{margin: -228px 0 0 57px;}
+.ficha3{margin: -102px 0 0 178px;}
+.ficha4{margin: -235px 0 0 170px;}
+
+.rivales{
+  float: left;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.partida-jugadores{
+  width: 100%;
+}
+
+.preguntas12{
+  width: 100%;
+  margin-top: -200px;
+}
 
 
 }
