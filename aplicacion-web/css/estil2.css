@@ -1,8 +1,5 @@
-@media screen and (min-width: 481px){
-
   body{
-    ackground:linear-gradient(#2cc7b6, #3cb0b6, #037b9c);
-    background-color: orange;
+    background:linear-gradient(#2cc7b6, #3cb0b6, #037b9c);
     font-family: roboto;
     margin: 0;
     padding: 0;
@@ -125,7 +122,6 @@
     height: auto;
     margin-top: 4px;
   }
-}
 
 @media screen and (max-width: 480px){
 
