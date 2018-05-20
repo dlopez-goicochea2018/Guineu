@@ -1,0 +1,141 @@
+
+@media screen and (min-width: 481px){
+
+  #boton-ranking23{
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+  }
+
+  .publicacion{
+    width: 600px;
+    height: auto;
+  }
+
+
+
+
+
+/*---juego---*/
+
+  #juego{float: left;}
+
+  .tablero{
+    width: 400px;
+    height: auto;
+    margin-left: 20px;
+  }
+
+  #dado{
+    margin: -245px 0 0 175px;
+    width: 90px;
+    height: auto;
+  }
+
+  .ficha1{margin: -90px 0 0 80px;}/*rosa*/
+  .ficha2{margin: -360px 0 0 113px;}/*verde*/
+  .ficha3{margin: -158px 0 0 307px;}/*azul*/
+  .ficha4{margin: -370px 0 0 292px;}/*naranja*/
+
+  .mi-jugador{
+    width: 40%;
+    height: 50px;
+    right: 30px;
+    top: 60px;
+    position: absolute;
+  }
+
+  .pregunta-historia{
+    position: relative;
+    right: -90px;
+    width: 150px;
+    height: 40px;
+    top: 100px;
+  }
+
+  .partida-jugadores{
+    width: 40%;
+    top: 300px;
+    right: 30px;
+    position: fixed;
+  }
+
+  .partida-jugadores2{
+    width: 40%;
+    top: 350px;
+    right: 30px;
+    position: fixed;
+  }
+
+  .partida-jugadores3{
+    width: 40%;
+    top: 400px;
+    right: 30px;
+    position: fixed;
+  }
+
+
+  .respuesta, .respuesta2{
+    width: 49.8%;
+    height: 70px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: solid 1px #777;
+    border-left: solid 1px #777;
+    float: left;
+  }
+
+  .terminar-juego{
+    width: 300px;
+    position: relative;
+    margin-top: 170px;
+  }
+
+
+
+  /* ----------- juego----*/
+
+  /* ----------- solo----*/
+
+  .solo, .solo2{
+    width: 450px;
+    text-align: center;
+  }
+
+  .nivel-porcentaje{
+    width: 60px;
+  }
+
+  .nivel2{
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  /* ----------- solo----*/
+
+  /* ----------- chat----*/
+
+  .chat{
+    width: 400px;
+  }
+
+  .letra{
+    margin-left: 30%;
+  }
+
+
+  /* ----------- chat----*/
+
+  .miperfil{
+    width: 700px;
+  }
+
+  .datos-prefil{
+    width: 600px;
+  }
+
+
+
+
+
+}
