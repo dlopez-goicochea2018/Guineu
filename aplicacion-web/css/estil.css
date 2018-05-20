@@ -4,7 +4,7 @@
 }
 
 body{
-background-color: #DDD;
+background-color: #EEE;
 font-family: Roboto;
 margin: 0;
 padding: 0;
@@ -797,6 +797,7 @@ label[for="activador"]::after {
   margin: 0 auto;
   margin-top: 30px;
 	text-align: center;
+  background-color: cyan
 }
 
 .casilla{
@@ -1133,6 +1134,32 @@ margin-top: 20px;
 
 @media screen and (max-width: 480px){
 
+  #cabezera{
+    background-color: #037b9c;
+    height: 40px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 600;
+    box-shadow: 0px 0px 15px 2px #999;
+  }
+
+  #cabezera2{
+    background-color: #037b9c;
+    height: 40px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 450;
+  }
+
+  #pie{
+    background-color: #037b9c;
+    height: 40px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+  }
 
 /*---------muro ------------------*/
 
@@ -1179,21 +1206,22 @@ margin-top: 20px;
 
 #juego{
   width: 100%;
-
+  text-align: center;
 }
 
 .tablero{
   height: 250px;
   width: 250px;
-  margin: 0 auto;
-  text-align: center;
+  position: relative;
+  z-index: -9;
 }
 
-#dado{
+.dado{
   width: 40px;
   height: 40px;
-  position: absolute;
-  margin: -160px 0 0 120px;
+  position: relative;
+  margin: -25px 0 0 50px;
+  z-index: 2;
 }
 
 .ficha1, .ficha2, .ficha3, .ficha4 {
@@ -1220,6 +1248,82 @@ margin-top: 20px;
   width: 100%;
   margin-top: -200px;
 }
+
+
+
+.respuesta{
+  width: 100%;
+  float: none;
+}
+
+.terminar-juego{
+  margin-top: 25px;
+}
+
+
+.primer-puesto, .puesto{
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.estadistica-global{
+  width: 100%;
+  text-align: center;
+}
+
+.estadistica{
+  width: 50%;
+}
+
+
+
+
+
+/*---------------solo---*/
+
+.nombre-asignatura{
+  width: 80%;
+}
+
+.solo{
+  width: 70%;
+}
+
+.nivel2{
+  width: 95%;
+  margin: 0 auto;
+	text-align: center;
+  background-color: red;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.solo2{
+  width: 50%;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.nivel-porcentaje{
+  width: 15%;
+  height: 40px;
+}
+
+.casilla{
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  float: left;
+  margin-left: 10px;
+}
+
+.caja-favorito{
+  width: 20%;
+}
+
+
+
 
 
 }
