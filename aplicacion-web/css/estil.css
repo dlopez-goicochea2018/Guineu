@@ -8,7 +8,7 @@ background-color: #EEE;
 font-family: Roboto;
 margin: 0;
 padding: 0;
-overflow-x: hidden;
+overflow: visible;
 }
 
 a{
@@ -585,53 +585,6 @@ label[for="activador"]::after {
   box-shadow: 0 0 15px 3px #888;
 }
 
-#dado{
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  margin: -182px 0 0 120px;
-}
-
-.ficha1{
-  width: 14px;
-  height: 14px;
-  border-radius: 10px;
-  border: 1px solid #000;
-  background-color: pink;
-  position: absolute;
-  margin: -70px 0 0 43px;
-}
-
-.ficha2{
-  width: 14px;
-  height: 14px;
-  border-radius: 10px;
-  border: 1px solid #000;
-  background-color: yellowgreen;
-  position: absolute;
-  margin: -271px 0 0 68px;
-}
-
-.ficha3{
-  width: 14px;
-  height: 14px;
-  border-radius: 10px;
-  border: 1px solid #000;
-  background-color: skyblue;
-  position: absolute;
-  margin: -121px 0 0 213px;
-}
-
-.ficha4{
-  width: 14px;
-  height: 14px;
-  border-radius: 10px;
-  border: 1px solid #000;
-  background-color: orange;
-  position: absolute;
-  margin: -280px 0 0 202px;
-}
-
 .rivales{
   float: right;
   margin-top: -260px;
@@ -793,35 +746,37 @@ label[for="activador"]::after {
 }
 
 .nivel2{
-  width: 520px;
+  width: 600px;
+  height: 40px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 20px;
 	text-align: center;
-  background-color: cyan
+  padding: 0;
 }
 
 .casilla{
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 5px;
   background-color: #037b9c;
-  position: absolute;
+  display: inline-block;
 }
 
 .estrella{
-  width: 30px;
-  height: 30px;
-  margin-top: 4px;
+  width: 90%;
+  height: auto;
+  text-align: center;
 }
 
 .solo2{
-  width: 350px;
+  width: 60%;
   height: 40px;
   border-radius: 5px;
   background-color: #037b9c;
   color: #FFF;
   font-size: 20px;
-  margin-bottom: 10px;
+  text-align: center;
+  display: inline-block;
 }
 
 .nivel-porcentaje{
@@ -1134,6 +1089,11 @@ margin-top: 20px;
 
 @media screen and (max-width: 480px){
 
+  body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
   #cabezera{
     background-color: #037b9c;
     height: 40px;
@@ -1202,6 +1162,7 @@ margin-top: 20px;
 .mi-jugador{
   width: 100%;
   margin-bottom: 20px;
+  margin-top: -15px;
 }
 
 #juego{
@@ -1212,27 +1173,7 @@ margin-top: 20px;
 .tablero{
   height: 250px;
   width: 250px;
-  position: relative;
-  z-index: -9;
 }
-
-.dado{
-  width: 40px;
-  height: 40px;
-  position: relative;
-  margin: -25px 0 0 50px;
-  z-index: 2;
-}
-
-.ficha1, .ficha2, .ficha3, .ficha4 {
-  width: 10px;
-  height: 10px;
-}
-
-.ficha1{margin: -60px 0 0 37px;}
-.ficha2{margin: -228px 0 0 57px;}
-.ficha3{margin: -102px 0 0 178px;}
-.ficha4{margin: -235px 0 0 170px;}
 
 .rivales{
   float: left;
@@ -1241,12 +1182,14 @@ margin-top: 20px;
 }
 
 .partida-jugadores{
+  margin-top: 0px;
   width: 100%;
 }
 
 .preguntas12{
   width: 100%;
-  margin-top: -200px;
+  margin-top: -10px;
+  margin-bottom: 20px;
 }
 
 
@@ -1265,6 +1208,10 @@ margin-top: 20px;
   width: 70%;
   margin: 0 auto;
   margin-top: 30px;
+}
+
+.nombre-ganador{
+  font-size: 22px;
 }
 
 .estadistica-global{
@@ -1294,20 +1241,8 @@ margin-top: 20px;
   width: 95%;
   margin: 0 auto;
 	text-align: center;
-  background-color: red;
   margin-top: 10px;
   display: inline-block;
-}
-
-.solo2{
-  width: 50%;
-  height: 40px;
-  margin-bottom: 10px;
-}
-
-.nivel-porcentaje{
-  width: 15%;
-  height: 40px;
 }
 
 .casilla{
@@ -1318,10 +1253,49 @@ margin-top: 20px;
   margin-left: 10px;
 }
 
-.caja-favorito{
-  width: 20%;
+.solo2{
+  width: 60%;
+  height: 40px;
+  margin-bottom: 10px;
 }
 
+.nivel-porcentaje{
+  width: 15%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #037b9c;
+  color: #FFF;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.casilla{
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #037b9c;
+  color: #FFF;
+  font-size: 20px;
+  margin-bottom: 10px;
+  float: left;
+  margin-left: 10px;
+}
+
+.estrella{
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.nombre-asignatura{
+	width: 90%;
+	height: 20px;
+	border-bottom: solid 1px #037b9c;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 10px;
+}
 
 
 
