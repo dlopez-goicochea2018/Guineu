@@ -8,7 +8,7 @@ background-color: #EEE;
 font-family: Roboto;
 margin: 0;
 padding: 0;
-overflow: visible;
+overflow: scroll;
 height: 100%;
 }
 
