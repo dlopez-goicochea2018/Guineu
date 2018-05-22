@@ -1,14 +1,11 @@
-@font-face {
-  font-family: "Roboto-Light";
-  src: url(../fonts/Roboto-Light.ttc);
-}
+
 
 body{
 background-color: #EEE;
-font-family: Roboto;
+font-family: 'Roboto', sans-serif;
 margin: 0;
 padding: 0;
-overflow: scroll;
+overflow: visible;
 height: 100%;
 }
 
@@ -271,7 +268,7 @@ label[for="activador"]::after {
   float: left;
   text-align: center;
   font-size: 20px;
-  font-family: roboto;
+  font-family: 'Roboto', sans-serif;
   margin-top: 6px;
 }
 
@@ -282,7 +279,7 @@ label[for="activador"]::after {
   float: left;
   text-align: center;
   font-size: 20px;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   margin-top: 6px;
 }
 
@@ -374,7 +371,7 @@ label[for="activador"]::after {
 .jugadores{
   font-size: 18px;
   text-align: center;
-  font-family: roboto;
+  font-family: 'Roboto', sans-serif;
   margin-top: 30px;
 }
 
@@ -934,7 +931,7 @@ label[for="activador"]::after {
   float: left;
   text-align: center;
   font-size: 20px;
-  font-family: roboto;
+  font-family: 'Roboto', sans-serif;
   margin-top: 6px;
 }
 
@@ -945,7 +942,7 @@ label[for="activador"]::after {
   float: left;
   text-align: center;
   font-size: 20px;
-  font-family: roboto;
+  font-family: 'Roboto', sans-serif;
   margin-top: 6px;
 }
 
