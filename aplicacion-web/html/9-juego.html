@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta charset="utf-8">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <link rel="stylesheet" href="../css/estil.css">
     <title>datos</title>
@@ -14,7 +15,7 @@
         <li><img class="avatar-hambu" src="../img/avatar2.gif"></li>
         <a href="21-perfil.html"><li class="lista-hambu">Editar perfil</li></a>
         <li class="lista-hambu">So<label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></li>
-        <li class="lista-hambu">Mode avió<label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></li>
+        <li class="lista-hambu">Modo avió<label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></li>
         <li class="lista-hambu">Desbloqueig<label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></li>
         <li class="lista-hambu">Legal</li>
         <li class="lista-hambu">Ajuda</li>
@@ -31,8 +32,10 @@
 
         <div id="cabezera"></div>
 
-          <div class="primero2"></div>
+        <div class="primero2"></div>
 
+      <div id="todo-juego">
+        <div id="tablero-jugador">
           <div class="mi-jugador">
             <img src="../img/avatar2.gif" class="avatar">
             <p class="identidad">Didac Lopez</p>
@@ -40,12 +43,7 @@
           </div>
 
           <div id="juego">
-            <img src="../img/tablero.jpg" class="tablero">
-            <img src="../img/dado2.gif" id="dado" class="dado" onclick="parar()">
-            <div class="ficha1"></div>
-            <div class="ficha2"></div>
-            <div class="ficha3"></div>
-            <div class="ficha4"></div>
+            <img src="../img/tableroanimado.gif" id="tablero" class="tablero" onclick="parar()">
           </div>
 
           <div class="preguntas12">
@@ -60,26 +58,30 @@
               <img src="../img/quesito-2.png" class="quesito">
             </div>
 
-            <div class="partida-jugadores2">
-              <img class="avatar2" src="../img/avatar2.gif">
+            </br>
+
+            <div class="partida-jugadores">
+              <img class="avatar2" src="../img/avatar3.gif">
               <p class="identidad2">Jaume Ricart</p>
               <img src="../img/quesito-3.png" class="quesito">
             </div>
 
-            <div class="partida-jugadores3">
-              <img class="avatar2" src="../img/avatar3.gif">
+            </br>
+
+            <div class="partida-jugadores">
+              <img class="avatar2" src="../img/avatar2.gif">
               <p class="identidad2">Jordi Sanchis</p>
               <img src="../img/quesito-4.png" class="quesito">
             </div>
           </div>
 
 
-
+        </div>
           <script type="text/javascript" language="javascript">
             function parar(){
 
-              if (dado.src.match("../img/dado2.gif")){
-                document.getElementById("dado").src="../img/dado-estatico.gif";
+              if (tablero.src.match("../img/tableroanimado.gif")){
+                document.getElementById("tablero").src="../img/tableroestatico.gif";
               }
             }
 
